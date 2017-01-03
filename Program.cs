@@ -26,7 +26,7 @@ namespace ConsoleApplication
 
         public void Configure(IApplicationBuilder builder)
         {
-            builder.Run(x=>x.Response.WriteAsync("Hello on the web!"));
+            builder.Run(x=>x.Response.WriteAsync("Hello Vijay on the web!"));
 
         }
     }
