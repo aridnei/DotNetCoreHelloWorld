@@ -1,7 +1,7 @@
 
-Code exercise from "Introduction to ASP.NET Core 1.0" on Microsoft Virtual Academy
-https://mva.microsoft.com/en-US/training-courses/introduction-to-aspnet-core-10-16841?l=JWZaodE6C_5706218965 
+# Task
 
+- Change Program.cs file to put your name in message "Hello Vijay on the web!" 
 
 ## Prerequisites
 
