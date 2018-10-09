@@ -1,22 +1,18 @@
 
 # Task
 
-- Change Program.cs file to put your name in message "Hello Vijay on the web!" 
+- Change file DotNetCoreHelloWorld/dotnet-example-api/Controllers/ValuesController.cs to put your name in message "Olá Mundo" para "Olá, JMalucelli!" 
 
 ## Prerequisites
 
-- Install .net core 
-https://www.microsoft.com/net/download/core#/lts
+- Use .net core 2.1 (microsoft/dotnet:2.1-sdk)
 
 ## Quick Start
 
-- Restore the packages using `dotnet restore`
+- Build the packages using `dotnet buid`
+- Enter in folder `dotnet-example-api`
 - Run the application using `dotnet run`
-- Run the application in watch mode using `dotnet watch run`
-- Go to the browser and go to http://localhost:5000
-- Make changes on Program.cs in the following line and refresh browser.
-
-`builder.Run(x=>x.Response.WriteAsync("Hello Vijay on the web!"));`
+- Go to the browser and go to https://localhost:5001/api/values/ and check that the message is "Olá Mundo"
 
 
 
