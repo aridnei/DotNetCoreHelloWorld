@@ -15,8 +15,6 @@ jobs:
             pip install \
               docker-compose==1.12.0 \
               awscli==1.11.76
-            echo "$(curl -s https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-latest.md5) \
-              /usr/local/bin/ecs-cli" | md5sum -c -
       - run:
           name: Build application Docker image
           command: |
