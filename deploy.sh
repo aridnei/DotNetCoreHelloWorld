@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # ECR_ENDPOINT=790355803000.dkr.ecr.us-east-1.amazonaws.com/dotnetcorehelloworld
 # CIRCLE_SHA1=eb9c147ebb2792c131694404a851f6768b5d6138
