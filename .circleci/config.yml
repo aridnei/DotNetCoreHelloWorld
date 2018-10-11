@@ -32,7 +32,5 @@ jobs:
       - deploy:
           name: Update ECS Task and Service
           command: |
-            pwd
-            ls -la
             chmod a+x ./deploy.sh
             ./deploy.sh

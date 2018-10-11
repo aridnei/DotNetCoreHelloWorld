@@ -1,12 +1,9 @@
 #!/usr/bin/env sh
 
-# ECR_ENDPOINT=790355803000.dkr.ecr.us-east-1.amazonaws.com/dotnetcorehelloworld
-# CIRCLE_SHA1=eb9c147ebb2792c131694404a851f6768b5d6138
 TASK_NAME="dotnetcorehelloworld"
 DOCKER_IMAGE=${ECR_ENDPOINT}:${CIRCLE_SHA1}
 CLUSTER_NAME="dotnet"
 SERVICE_NAME="dotnethelloworld"
-# AWS_CFG="--region us-east-1 --profile hello"
 AWS_CFG="--region us-east-1"
 
 echo "Get the previous task definition"
