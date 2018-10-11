@@ -29,6 +29,7 @@ jobs:
               docker tag dotnetcorehelloworld "${ECR_ENDPOINT}:${CIRCLE_SHA1}"
               docker push "${ECR_ENDPOINT}:${CIRCLE_SHA1}"
             fi
+      - deploy:
           name: Update ECS Task and Service
           command: |
             chmod a+x ./deploy.sh
