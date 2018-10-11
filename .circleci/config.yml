@@ -20,6 +20,10 @@ jobs:
           name: Build application Docker image
           command: |
             docker image build -t dotnetcorehelloworld .
+      - run:
+          name: Run tests
+          command: |
+            docker-compose -f ./docker-compose.test.yml up
       - deploy:
           name: Push application Docker image
           command: |

@@ -1,0 +1,7 @@
+version: '2'
+services:
+  # Ruby on Rails API 
+  dotnethelloworld:
+    image: dotnetcorehelloworld
+    ports:
+      - 8080:80
