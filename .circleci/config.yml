@@ -23,7 +23,7 @@ jobs:
           name: Push application Docker image
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              eval $(aws ecr get-login --region $AWS_DEFAULT_REGION)
+              $(aws ecr get-login --region $AWS_DEFAULT_REGION)
               docker tag dotnetcorehelloworld "${ECR_ENDPOINT}:${CIRCLE_SHA1}"
               docker push "${ECR_ENDPOINT}:${CIRCLE_SHA1}"
             fi
