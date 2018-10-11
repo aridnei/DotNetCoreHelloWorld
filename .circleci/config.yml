@@ -23,7 +23,7 @@ jobs:
           name: Push application Docker image
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+              eval $(aws ecr get-login --region $AWS_DEFAULT_REGION)
               docker tag app "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
               docker push "${ECR_ENDPOINT}/app:${CIRCLE_SHA1}"
             fi
