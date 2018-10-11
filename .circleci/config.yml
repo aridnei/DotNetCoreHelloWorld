@@ -11,7 +11,8 @@ jobs:
           name: Install dependencies
           command: |
             apk add --no-cache \
-              py-pip
+              py-pip \
+              jq
             pip install \
               docker-compose==1.22.0 \
               awscli==1.16.31
