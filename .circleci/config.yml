@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /app
     docker:
-      - image: docker:17.05.0-ce-git
+      - image: docker:18.06.1-ce-git
     steps:
       - checkout
       - setup_remote_docker
@@ -11,10 +11,10 @@ jobs:
           name: Install dependencies
           command: |
             apk add --no-cache \
-              py-pip=9.0.0-r1
+              py-pip==18.1
             pip install \
-              docker-compose==1.12.0 \
-              awscli==1.11.76
+              docker-compose==1.22.0 \
+              awscli==1.16.31
       - run:
           name: Build application Docker image
           command: |
