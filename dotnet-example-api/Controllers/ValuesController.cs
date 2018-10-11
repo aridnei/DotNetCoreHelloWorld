@@ -14,7 +14,7 @@ namespace dotnet_example_api.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "Olá Aridnei!" };
+            return new string[] { "Olá, JMalucelli!" };
         }
 
         // GET api/values/5
